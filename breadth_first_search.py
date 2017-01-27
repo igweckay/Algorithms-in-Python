@@ -11,6 +11,9 @@
 # In this code, the root node is Arad, but it can be changed to be any node or to be based on
 # user input.
 ##########################################################################################
+# imparative vs. declarative programming
+# imparative: for loop gice the computer a set of instructions
+# declarative: flatten, ask the computer to do something without caring how it does it
 
 # map is an adjacency dictionary that lists all of the cities as keys and their connection cities
 map = {'Arad': ['Zerind','Timisoara'],
