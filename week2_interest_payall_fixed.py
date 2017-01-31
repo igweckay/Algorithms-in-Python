@@ -3,27 +3,28 @@ balance - the outstanding balance on the credit card
 
 annualInterestRate - annual interest rate as a decimal
 
-monthlyPaymentRate - minimum monthly payment rate as a decimal
-
-equations:
-Monthly interest rate= (Annual interest rate) / 12.0
-Minimum monthly payment = (Minimum monthly payment rate) x (Previous balance)
-Monthly unpaid balance = (Previous balance) - (Minimum monthly payment)
+equations...
+Monthly interest rate = (Annual interest rate) / 12.0
+Monthly unpaid balance = (Previous balance) - (Minimum fixed monthly payment)
 Updated balance each month = (Monthly unpaid balance) + (Monthly interest rate x Monthly unpaid balance)
 '''
-balance = 42
-annualInterestRate = 0.2
-monthlyPaymentRate = 0.04
-#interest_include = balance * annualInterestRate
-for i in range(0,12):
-	minimum_payment = balance * monthlyPaymentRate
-	unpaid_balance = balance - minimum_payment
-	interest = annualInterestRate/12.0 * unpaid_balance
-	balance = unpaid_balance + interest
+		
+annualInterestRate = .2
+balance = 0
+monthly_payments = 10
+monthly_interest_rate = annualInterestRate/12.0
+new_balance = balance
+while new_balance > 0:
+		new_balance = balance
+		for month in range(0,12):
+			monthly_unpaid_balance = new_balance - monthly_payments
+			new_balance = monthly_unpaid_balance + monthly_interest_rate*monthly_unpaid_balance
+		monthly_payments += 10
 
-balance = round(balance,2)
-
-print ('Remaining balance: ' + str(balance))
+if balance == 0:
+	print ('Lowest Payment: 0')
+else:
+	print ('Lowest Payment: ' + str(monthly_payments - 10))
 
 
 
