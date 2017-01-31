@@ -8,7 +8,9 @@ Monthly interest rate = (Annual interest rate) / 12.0
 Monthly unpaid balance = (Previous balance) - (Minimum fixed monthly payment)
 Updated balance each month = (Monthly unpaid balance) + (Monthly interest rate x Monthly unpaid balance)
 '''
-		
+
+
+#UNFINISHED
 annualInterestRate = .2
 balance = 0
 monthly_payments = 10
