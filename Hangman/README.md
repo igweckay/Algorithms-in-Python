@@ -1,1 +1,1 @@
-The hangman game is in hangmad.py
+The hangman game is in hangman.py
