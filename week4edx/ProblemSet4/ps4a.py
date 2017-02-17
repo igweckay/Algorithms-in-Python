@@ -149,6 +149,12 @@ def updateHand(hand, word):
     returns: dictionary (string -> int)
     """
     # TO DO ... <-- Remove this comment when you code this function
+    new_hand = hand.copy()
+    for letter in word:
+        if letter in hand:
+            new_hand[letter] = hand[letter] - word.count(letter)
+    return new_hand
+
 
 
 
