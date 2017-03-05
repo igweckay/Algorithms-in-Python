@@ -1,3 +1,6 @@
+#######################################
+# Title: Perceptron Learning ALgorithm
+#######################################
 import numpy as np 
 class Perceptron(object):
 	'''Perceptron classifier.
@@ -9,7 +12,7 @@ class Perceptron(object):
 	Attributes
 	----------
 	w_ : id-array  -->  weights after filtering
-	errors_ : list  -->  number of misclassifications in every epoch (test dataset)
+	errors_ : list  -->  number of misclassifications in every epoch (passes over the training dataset)
 	'''
 	def __init__(self, eta=0.01, n_iter=10):
 		self.eta = eta
