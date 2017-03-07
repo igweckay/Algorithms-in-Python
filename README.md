@@ -1,7 +1,7 @@
 # Algorithms-in-Python
 Algorithms in Python is a repository dedicated to all of the algo I program in Pyton :)
 
-__installations__
+__**installations**__ </br>
 pip install mlxtend </br>
 pip install numpy </br>
 pip intsall sklearn </br>
