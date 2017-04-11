@@ -1,0 +1,417 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>3.6. Summary &mdash; Hands-on Python Tutorial for Python 3.1</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/sidebar.js"></script>
+    <link rel="top" title="Hands-on Python Tutorial for Python 3.1" href="index.html" />
+    <link rel="up" title="3. More On Flow of Control" href="ch3.html" />
+    <link rel="next" title="4. Dynamic Web Pages" href="ch4.html" />
+    <link rel="prev" title="3.5. Further Topics to Consider" href="furthertopics.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="ch4.html" title="4. Dynamic Web Pages"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="furthertopics.html" title="3.5. Further Topics to Consider"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Hands-on Python Tutorial</a> &raquo;</li>
+          <li><a href="ch3.html" accesskey="U">3. More On Flow of Control</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="summary">
+<h1>3.6. Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h1>
+<ol class="arabic">
+<li><p class="first">Comparison operators produce a Boolean result (type <tt class="docutils literal"><span class="pre">bool</span></tt>,
+either <tt class="docutils literal"><span class="pre">True</span></tt> or <tt class="docutils literal"><span class="pre">False</span></tt>):
+[<a class="reference internal" href="ifstatements.html#more-conditional-expressions"><em>More Conditional Expressions</em></a>]</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="46%" />
+<col width="24%" />
+<col width="30%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><p class="first last">Meaning</p>
+</th>
+<th class="head"><p class="first last">Math Symbol</p>
+</th>
+<th class="head"><p class="first last">Python Symbols</p>
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><p class="first last">Less than</p>
+</td>
+<td><p class="first last">&lt;</p>
+</td>
+<td><p class="first last"><tt class="docutils literal"><span class="pre">&lt;</span></tt></p>
+</td>
+</tr>
+<tr class="row-odd"><td><p class="first last">Greater than</p>
+</td>
+<td><p class="first last">&gt;</p>
+</td>
+<td><p class="first last"><tt class="docutils literal"><span class="pre">&gt;</span></tt></p>
+</td>
+</tr>
+<tr class="row-even"><td><p class="first last">Less than or equal</p>
+</td>
+<td><p class="first last">≤</p>
+</td>
+<td><p class="first last"><tt class="docutils literal"><span class="pre">&lt;=</span></tt></p>
+</td>
+</tr>
+<tr class="row-odd"><td><p class="first last">Greater than or equal</p>
+</td>
+<td><p class="first last">≥</p>
+</td>
+<td><p class="first last"><tt class="docutils literal"><span class="pre">&gt;=</span></tt></p>
+</td>
+</tr>
+<tr class="row-even"><td><p class="first last">Equals</p>
+</td>
+<td><p class="first last">=</p>
+</td>
+<td><p class="first last"><tt class="docutils literal"><span class="pre">==</span></tt></p>
+</td>
+</tr>
+<tr class="row-odd"><td><p class="first last">Not equal</p>
+</td>
+<td><p class="first last">≠</p>
+</td>
+<td><p class="first last"><tt class="docutils literal"><span class="pre">!=</span></tt></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Comparisons may be chained as in <tt class="docutils literal"><span class="pre">a</span> <span class="pre">&lt;</span> <span class="pre">b</span> <span class="pre">&lt;=</span> <span class="pre">c</span> <span class="pre">&lt;</span> <span class="pre">d</span> <span class="pre">!=</span> <span class="pre">e</span></tt>.
+[<a class="reference internal" href="ifstatements.html#multiple-tests"><em>Multiple Tests and if-elif Statements</em></a>]</p>
+</li>
+<li><p class="first">The <tt class="docutils literal"><span class="pre">in</span></tt> operator: [<a class="reference internal" href="boolean.html#arbitrary-types-bool"><em>Arbitrary Types Treated As Boolean</em></a>]</p>
+<blockquote>
+<div><p><em>value</em> <tt class="docutils literal"><span class="pre">in</span></tt> <em>sequence</em></p>
+</div></blockquote>
+<p>is True if <em>value</em> is one of the elements in the
+<em>sequence</em>.</p>
+</li>
+<li><p class="first">Interpretation as Boolean (<tt class="docutils literal"><span class="pre">True</span></tt>, <tt class="docutils literal"><span class="pre">False</span></tt>):
+All Python data may be converted to Boolean (type <tt class="docutils literal"><span class="pre">bool</span></tt>). The
+only built-in data that have a Boolean meaning of <tt class="docutils literal"><span class="pre">False</span></tt>,
+in addition to
+<tt class="docutils literal"><span class="pre">False</span></tt> itself, are <tt class="docutils literal"><span class="pre">None</span></tt>, numeric values equal to 0, and
+empty collections or sequences, like the empty list {[]}and the
+empty string <tt class="docutils literal"><span class="pre">''</span></tt>. [<a class="reference internal" href="boolean.html#arbitrary-types-bool"><em>Arbitrary Types Treated As Boolean</em></a>]</p>
+</li>
+<li><p class="first">Operators on Boolean expressions
+[<a class="reference internal" href="ifstatements.html#compound-boolean-expressions"><em>Compound Boolean Expressions</em></a>]</p>
+<ol class="arabic">
+<li><div class="first line-block">
+<div class="line"><em>condition1</em> <tt class="docutils literal"><span class="pre">and</span></tt> <em>condition2</em></div>
+<div class="line"><tt class="docutils literal"><span class="pre">True</span></tt> only if both conditions are <tt class="docutils literal"><span class="pre">True</span></tt></div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><em>condition1</em> <tt class="docutils literal"><span class="pre">or</span></tt> <em>condition2</em></div>
+<div class="line"><tt class="docutils literal"><span class="pre">True</span></tt> only if at least one condition is <tt class="docutils literal"><span class="pre">True</span></tt></div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line"><tt class="docutils literal"><span class="pre">not</span></tt> <em>condition</em></div>
+<div class="line"><tt class="docutils literal"><span class="pre">True</span></tt> only when <em>condition</em> is <tt class="docutils literal"><span class="pre">False</span></tt></div>
+</div>
+</li>
+</ol>
+<p>This description is sufficient if the result is used as a Boolean
+value (in an <tt class="docutils literal"><span class="pre">if</span></tt> or <tt class="docutils literal"><span class="pre">while</span></tt> condition). See
+<a class="reference internal" href="boolean.html#arbitrary-types-bool"><em>Arbitrary Types Treated As Boolean</em></a> for the advanced use when operands are
+not explicitly Boolean, and the result is not going to be
+interpreted as Boolean.</p>
+</li>
+<li><p class="first"><tt class="docutils literal"><span class="pre">if</span></tt> Statements</p>
+<ol class="arabic">
+<li><p class="first">Simple <tt class="docutils literal"><span class="pre">if</span></tt> statement [<a class="reference internal" href="ifstatements.html#simple-if-statements"><em>Simple if Statements</em></a>]</p>
+<div class="line-block">
+<div class="line"><tt class="docutils literal"><span class="pre">if</span></tt> <em>condition</em> <tt class="docutils literal"><span class="pre">:</span></tt></div>
+<div class="line-block">
+<div class="line">indentedStatementBlockForTrueCondition</div>
+</div>
+</div>
+<p>If the condition is <tt class="docutils literal"><span class="pre">True</span></tt>, then do the indented statement block. If
+the condition is not <tt class="docutils literal"><span class="pre">True</span></tt>, then skip it.</p>
+</li>
+<li><p class="first"><tt class="docutils literal"><span class="pre">if-else</span></tt> statement [<a class="reference internal" href="ifstatements.html#if-else-statements"><em>if-else Statements</em></a>]</p>
+<div class="line-block">
+<div class="line"><tt class="docutils literal"><span class="pre">if</span></tt> <em>condition</em> <tt class="docutils literal"><span class="pre">:</span></tt></div>
+<div class="line-block">
+<div class="line">indentedStatementBlockForTrueCondition</div>
+</div>
+<div class="line"><tt class="docutils literal"><span class="pre">else:</span></tt></div>
+<div class="line-block">
+<div class="line">indentedStatementBlockForFalseCondition</div>
+</div>
+</div>
+<p>If the condition is <tt class="docutils literal"><span class="pre">True,</span></tt> then do the first indented block only. If
+the condition is not <tt class="docutils literal"><span class="pre">True</span></tt>, then skip the first indented block and
+do the one after the <tt class="docutils literal"><span class="pre">else:</span></tt>.</p>
+</li>
+<li><p class="first">The most general syntax for an if statement,
+<tt class="docutils literal"><span class="pre">if</span></tt>-<tt class="docutils literal"><span class="pre">elif</span></tt>-<tt class="docutils literal"><span class="pre">else</span></tt> [<a class="reference internal" href="ifstatements.html#multiple-tests"><em>Multiple Tests and if-elif Statements</em></a>]</p>
+<div class="line-block">
+<div class="line"><tt class="docutils literal"><span class="pre">if</span></tt> <em>condition1</em> <tt class="docutils literal"><span class="pre">:</span></tt></div>
+<div class="line-block">
+<div class="line">indentedStatementBlockForTrueCondition1</div>
+</div>
+<div class="line"><tt class="docutils literal"><span class="pre">elif</span></tt> <em>condition2</em> <tt class="docutils literal"><span class="pre">:</span></tt></div>
+<div class="line-block">
+<div class="line">indentedStatementBlockForFirstTrueCondition2</div>
+</div>
+<div class="line"><tt class="docutils literal"><span class="pre">elif</span></tt> <em>condition3</em> <tt class="docutils literal"><span class="pre">:</span></tt></div>
+<div class="line-block">
+<div class="line">indentedStatementBlockForFirstTrueCondition3</div>
+</div>
+<div class="line"><tt class="docutils literal"><span class="pre">elif</span></tt> <em>condition4</em> <tt class="docutils literal"><span class="pre">:</span></tt></div>
+<div class="line-block">
+<div class="line">indentedStatementBlockForFirstTrueCondition4</div>
+</div>
+<div class="line"><tt class="docutils literal"><span class="pre">else:</span></tt></div>
+<div class="line-block">
+<div class="line">indentedStatementBlockForEachConditionFalse</div>
+</div>
+</div>
+<p>The <tt class="docutils literal"><span class="pre">if</span></tt>, each <tt class="docutils literal"><span class="pre">elif</span></tt>, and the final <tt class="docutils literal"><span class="pre">else</span></tt> line are all
+aligned. There can be any number of <tt class="docutils literal"><span class="pre">elif</span></tt> lines, each followed
+by an indented block. (Three happen to be illustrated above.) With
+this construction exactly <em>one</em> of the indented blocks is executed.
+It is the one corresponding to the <em>first</em> <tt class="docutils literal"><span class="pre">True</span></tt> condition, or,
+if all conditions are <tt class="docutils literal"><span class="pre">False</span></tt>, it is the block after the final
+<tt class="docutils literal"><span class="pre">else</span></tt> line.</p>
+</li>
+<li><p class="first"><tt class="docutils literal"><span class="pre">if</span></tt>-<tt class="docutils literal"><span class="pre">elif</span></tt> [<a class="reference internal" href="ifstatements.html#multiple-tests"><em>Multiple Tests and if-elif Statements</em></a>]
+The <tt class="docutils literal"><span class="pre">else:</span></tt> clause above may also be omitted. In that case, if
+none of the conditions is true, no indented block is executed.</p>
+</li>
+</ol>
+</li>
+<li><p class="first"><tt class="docutils literal"><span class="pre">while</span></tt> statements [<a class="reference internal" href="whilestatements.html#simple-while-loops"><em>Simple while Loops</em></a>]</p>
+<div class="line-block">
+<div class="line"><tt class="docutils literal"><span class="pre">while</span></tt> <em>condition</em> <tt class="docutils literal"><span class="pre">:</span></tt></div>
+<div class="line-block">
+<div class="line">indentedStatementBlock</div>
+</div>
+</div>
+<p>Do the indented block if <em>condition</em> is <tt class="docutils literal"><span class="pre">True</span></tt>, and at the
+end of the indented block loop back and test the <em>condition</em> again,
+and continue repeating the indented block as long as the condition
+is <tt class="docutils literal"><span class="pre">True</span></tt> <em>after</em> completing the indented block. Execution does
+not stop in the middle of the block, even if the
+<em>condition</em> becomes <tt class="docutils literal"><span class="pre">False</span></tt> at that point.</p>
+<p>A <tt class="docutils literal"><span class="pre">while</span></tt> loop can be used to set up an (intentionally)
+apparently infinite loop by making <em>condition</em> be just
+<tt class="docutils literal"><span class="pre">True</span></tt>. To end the loop in that case, there can be a test inside
+the loop that sometime becomes True, allowing the execution of a
+<tt class="docutils literal"><span class="pre">return</span></tt> statement to break out of the loop.
+[<a class="reference internal" href="whilestatements.html#fancier-animation-loop"><em>Fancier Animation Loop Logic (Optional)</em></a>]</p>
+</li>
+<li><p class="first"><tt class="docutils literal"><span class="pre">range</span></tt> function with three parameters
+[<a class="reference internal" href="whilestatements.html#simple-while-loops"><em>Simple while Loops</em></a>]</p>
+<blockquote>
+<div><p><tt class="docutils literal"><span class="pre">range(</span></tt> <em>start</em> <tt class="docutils literal"><span class="pre">,</span></tt>  <em>pastEnd</em> <tt class="docutils literal"><span class="pre">,</span></tt> <em>step</em> <tt class="docutils literal"><span class="pre">)</span></tt></p>
+</div></blockquote>
+<p>Return a list of elements</p>
+<blockquote>
+<div><p><tt class="docutils literal"><span class="pre">[</span></tt> <em>start</em> <tt class="docutils literal"><span class="pre">,</span></tt> <em>start</em> <tt class="docutils literal"><span class="pre">+</span></tt> <em>step</em> <tt class="docutils literal"><span class="pre">,</span></tt> ... <tt class="docutils literal"><span class="pre">]</span></tt></p>
+</div></blockquote>
+<p>with each element <em>step</em> from the previous one, ending just <em>before</em>
+reaching <em>pastEnd</em>. If  <em>step</em> is positive,
+<em>pastEnd</em> is larger than the last element. If
+<em>step</em> is negative,  <em>pastEnd</em> is smaller than the
+last element.</p>
+</li>
+<li><p class="first">Type <tt class="docutils literal"><span class="pre">tuple</span></tt></p>
+<div class="line-block">
+<div class="line"><tt class="docutils literal"><span class="pre">(</span></tt> <em>expression</em> <tt class="docutils literal"><span class="pre">,</span></tt> <em>expression</em> <tt class="docutils literal"><span class="pre">,</span></tt> and so on <tt class="docutils literal"><span class="pre">)</span></tt></div>
+<div class="line"><tt class="docutils literal"><span class="pre">(</span></tt> <em>expression</em> <tt class="docutils literal"><span class="pre">,</span> <span class="pre">)</span></tt></div>
+<div class="line"><tt class="docutils literal"><span class="pre">(</span> <span class="pre">)</span></tt></div>
+</div>
+<ol class="arabic simple">
+<li>A literal tuple, with two or more elements, consists of a comma
+separated collection of values all enclosed in parentheses. A
+literal tuple with only a single element <em>must</em> have a comma after
+the element to distinguish from a regular parenthesized expression.
+[<a class="reference internal" href="loopsandtuples.html#loops-and-tuples"><em>Loops and Tuples</em></a>]</li>
+<li>A tuple is a kind of sequence.</li>
+<li>Tuples, unlike lists, are immutable (may not be altered).</li>
+</ol>
+</li>
+<li><p class="first">Additional programming techniques</p>
+<ol class="arabic">
+<li><p class="first">These techniques extend the techniques listed in the summary of
+the previous chapter. [<a class="reference internal" href="objectsummary.html#objectsummary"><em>Summary</em></a>]</p>
+</li>
+<li><p class="first">The basic pattern for programming with a while loop is
+[<a class="reference internal" href="whilestatements.html#simple-while-loops"><em>Simple while Loops</em></a>]</p>
+<div class="line-block">
+<div class="line">initialization</div>
+<div class="line"><tt class="docutils literal"><span class="pre">while</span></tt> <em>continuationCondition</em> <tt class="docutils literal"><span class="pre">:</span></tt></div>
+<div class="line-block">
+<div class="line">main action to repeat</div>
+<div class="line">prepare variables for next time through loop</div>
+</div>
+</div>
+</li>
+<li><p class="first">Interactive while loops generally follow the pattern
+[<a class="reference internal" href="whilestatements.html#interactive-while-loops"><em>Interactive while Loops</em></a>]</p>
+<div class="line-block">
+<div class="line">input first data from user</div>
+<div class="line"><tt class="docutils literal"><span class="pre">while</span></tt> <em>continationConditionBasedOnTestOfUserData</em> <tt class="docutils literal"><span class="pre">:</span></tt></div>
+<div class="line-block">
+<div class="line">process user data</div>
+<div class="line">input <em>next</em> user data</div>
+</div>
+</div>
+<p>Often the code to input the first data and the later data is the
+same, but it must appear in both places!</p>
+</li>
+<li><p class="first">Sentinel Loops [<a class="reference internal" href="whilestatements.html#interactive-while-loops"><em>Interactive while Loops</em></a>]</p>
+<p>Often the end of the repetition of a data-reading loop is indicated
+by a <em>sentinel</em> in the data: a data value known to both the user
+and the program to not be regular data, that is specifically used
+to signal the end of the data.</p>
+</li>
+<li><p class="first">Nesting Control Flow Statements
+[<a class="reference internal" href="ifstatements.html#nesting-control-flow-statements"><em>Nesting Control-Flow Statements</em></a>]</p>
+<ol class="arabic simple">
+<li><tt class="docutils literal"><span class="pre">If</span></tt> statements may be nested inside loops, so the loop does
+not have to execute all the same code each time; it just needs
+to start with the same <em>test</em>.</li>
+<li>Loops may be nested. The inner loop completes its repetitions
+each time before going back to the outer loop heading.</li>
+</ol>
+</li>
+<li><p class="first">Breaking a repeating pattern into a loop
+[<a class="reference internal" href="whilestatements.html#graphical-applications"><em>Graphical Applications</em></a>]</p>
+<p>Since a loop is basically circular, there may be several choices of
+where to split it to list it in the loop body. The split point
+needs to be where the continuation test is ready to be run, but
+that may still allow flexibility. When you choose to change the
+starting point of the loop, and rotate statements between the
+beginning and the end of the loop, you change what statements need
+to be included before and after the loop, sometimes repeating or
+undoing actions taken in the loop.</p>
+</li>
+<li><p class="first">Tuples in lists [<a class="reference internal" href="loopsandtuples.html#loops-and-tuples"><em>Loops and Tuples</em></a>]
+A list may contain tuples. A <tt class="docutils literal"><span class="pre">for</span></tt>-each loop may process tuples in a
+list, and the <tt class="docutils literal"><span class="pre">for</span></tt> loop heading can do multiple assignments to
+variables for each element of the next tuple.</p>
+</li>
+<li><p class="first">Tuples as return values [<a class="reference internal" href="loopsandtuples.html#loops-and-tuples"><em>Loops and Tuples</em></a>]
+A function may return more than one value by wrapping them in a
+tuple. The function may then be used in a multiple assignment
+statement to extract each of the returned variables.</p>
+</li>
+</ol>
+</li>
+<li><p class="first">Graphics</p>
+<ol class="arabic simple">
+<li>Zelle&#8217;s Graphics GraphWin method <tt class="docutils literal"><span class="pre">checkMouse()</span></tt> allows mouse
+tests without stopping animation, by testing the last mouse click,
+not waiting for a new one. [<a class="reference internal" href="whilestatements.html#graphical-applications"><em>Graphical Applications</em></a>]</li>
+<li>The most finished examples of using Zelle&#8217;s graphics are in
+[<a class="reference internal" href="loopsandtuples.html#loops-and-tuples"><em>Loops and Tuples</em></a>] and [<a class="reference internal" href="whilestatements.html#graphical-applications"><em>Graphical Applications</em></a>].</li>
+</ol>
+</li>
+</ol>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="furthertopics.html"
+                        title="previous chapter">3.5. Further Topics to Consider</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="ch4.html"
+                        title="next chapter">4. Dynamic Web Pages</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/whilesummary.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="ch4.html" title="4. Dynamic Web Pages"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="furthertopics.html" title="3.5. Further Topics to Consider"
+             >previous</a> |</li>
+        <li><a href="index.html">Hands-on Python Tutorial</a> &raquo;</li>
+          <li><a href="ch3.html" >3. More On Flow of Control</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Dr. Andrew N. Harrington.
+      Last updated on Aug 08, 2013.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b1.
+    </div>
+  </body>
+</html>
